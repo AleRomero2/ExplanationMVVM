@@ -28,6 +28,11 @@ namespace MyFirstMVVM
             //Añadimos el contexto de Datos para que Vista y ViewModel se encuentren conectados
             var vm = new MainViewModel();            
             DataContext = vm;
-        }        
+        }
+
+        private void Button1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

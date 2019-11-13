@@ -8,25 +8,25 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <StackPanel Orientation="Horizontal">
-            <TextBox Width="200" Height="100"                     
+            <!-- <TextBox Width="200" Height="100"                     
             Text="{Binding TextGreetings, UpdateSourceTrigger=PropertyChanged}"/>
-            <!--Mediante la palabra clave Binding podemos asociar Propiedades del Contexto de Datos
+            Mediante la palabra clave Binding podemos asociar Propiedades del Contexto de Datos
             (ViewModel) siendo el mismo nombre en ambos sitios-->
-           
-            <Button x:Name="Button1" Content="Press ME" Height="100" 
-                    Command="{Binding CheckTextGreetingsCommand}"/>
 
             <Label Content="{Binding TextGreetings}"/>
-
-            <StackPanel Orientation="Horizontal">
-                <StackPanel>
-                    <Button Content="1" Width="50" Command="{Binding InsertNumberCommand}" CommandParameter="1"/>
-                    <Button Content="2" Width="50" Command="{Binding InsertNumberCommand}" CommandParameter="2"/>
-                    <Button Content="3" Width="50" Command="{Binding InsertNumberCommand}" CommandParameter="3"/>
-                </StackPanel>
+            <StackPanel Width="766" Margin="0,27,0,0" HorizontalAlignment="Center">
+                <Button Content="1.Muy aburridas y extensas" Command="{Binding InsertNumberCommand}" CommandParameter="1" VerticalAlignment="Top" Width="260"/>
+                <Button Content="2.Son densas pero explica bien" Command="{Binding InsertNumberCommand}" CommandParameter="2" Width="260"/>
+                <Button Content="3.No me entero de nada y me copio los trabajos" Command="{Binding InsertNumberCommand}" CommandParameter="3" Width="260"/>
+                <Button x:Name="Button1" Content="Press ME" Height="100" HorizontalAlignment="Stretch" 
+                    Command="{Binding CheckTextGreetingsCommand}" Click="Button1_Click"  Width="73"/>
             </StackPanel>
-        </StackPanel>
+            
 
-        
+
+
+        </StackPanel>
+        <Label Content="¿Que te parecen las clases de Chema?"  VerticalAlignment="Top" HorizontalAlignment="Center"></Label>
+
     </Grid>
 </Window>
